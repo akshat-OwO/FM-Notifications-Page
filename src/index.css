@@ -45,6 +45,7 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-bottom: calc(var(--_size) + 0.5rem);
 }
 
@@ -146,4 +147,33 @@ body {
 
 .details-wrapper .picture:hover{
   filter: drop-shadow(1px 1px 8px var(--grayishblue));
+}
+
+/* `ia queries */
+
+@media screen and (max-width: 550px) {
+  .App {
+    padding: calc(var(--_size));
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .heading {
+    font-size: var(--_size);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .heading {
+    font-size: calc(var(--_size) - .15rem);
+  }
+  .reading {
+    font-size: calc(var(--_size) - .15rem);
+  }
+  .details-wrapper strong {
+    font-size: calc(var(--_size) - .15rem);
+  }
+  .details-wrapper p{
+    font-size: calc(var(--_size) - .15rem);
+  }
 }
